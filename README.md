@@ -73,6 +73,7 @@ git clone [https://github.com/YourUsername/College-Enquiry-Chatbot.git](https://
 
 # Install high-performance dependencies
 pip install -q -U transformers peft bitsandbytes accelerate datasets trl
+```
 
 ##  Future Roadmap & Scaling
 To transition this project from a research-based MVP (Minimum Viable Product) to a production-grade enterprise solution, the following enhancements are planned:

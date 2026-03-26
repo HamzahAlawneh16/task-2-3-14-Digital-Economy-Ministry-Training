@@ -73,3 +73,22 @@ git clone [https://github.com/YourUsername/College-Enquiry-Chatbot.git](https://
 
 # Install high-performance dependencies
 pip install -q -U transformers peft bitsandbytes accelerate datasets trl
+
+##  Future Roadmap & Scaling
+To transition this project from a research-based MVP (Minimum Viable Product) to a production-grade enterprise solution, the following enhancements are planned:
+
+### 1. RAG Integration (Retrieval-Augmented Generation) 
+* **Objective:** Move beyond static JSON intents by integrating a **Vector Database** (e.g., Pinecone or ChromaDB).
+* **Goal:** Enable the chatbot to query live PDF documents, such as the "University Student Handbook" or "Academic Bylaws," providing real-time, document-grounded answers.
+
+### 2. Multi-Channel Deployment 
+* **Web Interface:** Develop a responsive frontend using **Streamlit** or **React** for seamless student interaction.
+* **API Development:** Wrap the model in a **FastAPI** container to support integration with university mobile apps or Discord/WhatsApp bots.
+
+### 3. Model Optimization & Hosting 
+* **Quantization Scaling:** Explore `GGUF` or `AWQ` quantization formats to enable inference on edge devices with minimal RAM.
+* **Model Hub:** Host the specialized LoRA adapters on **Hugging Face Hub** for community access and collaborative testing.
+
+### 4. Advanced Evaluation Framework 
+* **Automated QA:** Implement an evaluation pipeline using **RAGAS** or **GPT-4 as a Judge** to measure faithfulness, relevance, and answer correctness objectively.
+* **Multilingual Support:** Fine-tune the model further to support queries in **Arabic**, catering to a broader student demographic in the region.
